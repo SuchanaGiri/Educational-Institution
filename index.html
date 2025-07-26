@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">D-Tech-Code</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./hostel.html">Hostel</a>
+            </li>
+            <li class="nav-item dropdown">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="./index1.html">Library</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index2login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./File3.html">Canteen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./chatbotindex.html">Help</a>
+              </li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./library-landing.html">Action</a></li>
+                <li><a class="dropdown-item" href="./library-landing.html">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+           
+            
+            
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+      <style>
+        .marquee-container {
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      
+        .marquee-img {
+          display: inline-block;
+          animation: scroll-left 15s linear infinite;
+        }
+      
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      </style>
+      
+      <style>
+        #heroCarousel {
+          height: 400px;
+          overflow: hidden;
+        }
+      
+        #heroCarousel .carousel-inner,
+        #heroCarousel .carousel-item,
+        #heroCarousel img {
+          height: 100%;
+        }
+      
+        #heroCarousel img {
+          object-fit: cover;
+          width: 100%;
+        }
+      </style>
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://alumni.acr.iitb.ac.in/wp-content/uploads/2023/07/1903x789_MB-1.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="college.webp" class="d-block w-100" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="image5.jpg" class="d-block w-100" alt="Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      
+       
+      <style>
+        .section2 {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          padding: 20px;
+          background-color: #333;
+        }
+      
+        .info-card {
+          width: 200px;
+          padding: 20px;
+          background: #f9f9f9;
+          border-radius: 15px;
+          text-align: center;
+          transition: transform 0.3s, box-shadow 0.3s;
+          cursor: pointer;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          border: 2px solid black;
+        }
+      
+        .info-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+      
+        .info-card img {
+          width: 100px;
+          height: 100px;
+          object-fit: contain;
+          margin-bottom: 10px;
+          transition: transform 0.3s;
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+      
+        .info-card:hover img {
+          transform: scale(1.1);
+        }
+      
+        .info-card .text {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      </style>
+      
+      <div class="section2">
+        <div class="info-card">
+          <img src="https://i.ytimg.com/vi/bO1D02_SSFU/sddefault.jpg" alt="Courses">
+          <div class="text">70+ Courses</div>
+        </div>
+        <div class="info-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2d9KKb3qrBWaYCqKOlvmfIYTAOjlYHXGf7w&s" alt="Scholarship">
+          <div class="text">10 Lakh Scholarship</div>
+        </div>
+        <div class="info-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPulNBJe2ecj87jwRV7cn7ZqkTztd3RwqQA&s" alt="Placement">
+          <div class="text">98% Placement</div>
+        </div>
+        <div class="info-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPulNBJe2ecj87jwRV7cn7ZqkTztd3RwqQA&s" alt="Placement">
+          <div class="text">98% Placement</div>
+        </div>
+        <div class="info-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPulNBJe2ecj87jwRV7cn7ZqkTztd3RwqQA&s" alt="Placement">
+          <div class="text">98% Placement</div>
+        </div>
+      </div>
+      
+      <style>
+        .section3 {
+          width: 100%;
+          padding: 40px 20px;
+          background-color: rgb(248, 245, 245);
+          text-align: center;
+        }
+      
+        .section3 p {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 30px;
+          columns: white;
+        }
+      
+        .awards-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 30px;
+          color: white;
+        }
+      
+        .awards {
+          width: 200px;
+          height: 200px;
+          background-color:rgb(37, 35, 35);
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          background-size: cover;
+          background-position: center;
+          color: white;
+        }
+      
+        /* Responsive */
+        @media (max-width: 768px) {
+          .awards {
+            width: 100%;
+            max-width: 300px;
+            height: 180px;
+          }
+        }
+      </style>
+      
+      <div class="section3">
+        <p style="font-size: 50px;">Awards</p>
+        <div class="awards-container">
+          <div class="awards" style="background-image: url('award2.webp');"></div>
+          <div class="awards" style="background-image: url('awards3.jpg');"></div>
+          <div class="awards" style="background-image: url('awards4.webp');"></div>
+          <div class="awards" style="background-image: url('awards7.webp');"></div>
+          <div class="awards" style="background-image: url('awards9.jpg');"></div>
+        </div>
+      </div>
+      
+      <style>
+        .placement-section {
+          width: 100%;
+          padding: 40px 20px;
+          background-color: rgb(37, 35, 35);
+          text-align: center;
+        }
+      
+        .placement-section h2 {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+      
+        .placement-boxes {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+        }
+      
+        .placement-box {
+          width: 200px;
+          background-color: #f5efef;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          transition: transform 0.3s ease;
+          text-align: center;
+        }
+      
+        .placement-box img {
+          width: 100%;
+          height: 130px;
+          object-fit: cover;
+        }
+      
+        .placement-box p {
+          margin: 10px 0;
+          font-weight: 600;
+          font-size: 1rem;
+        }
+      
+        .placement-box:hover {
+          transform: scale(1.05);
+        }
+      
+        @media (max-width: 768px) {
+          .placement-box {
+            width: 90%;
+            max-width: 300px;
+          }
+        }
+      </style>
+      
+      <div class="placement-section">
+        <h2 style="color: white; font-size: 45px;">Placement <span style="color: #07c4d9;">Highlights</span></h2>
+        <div class="placement-boxes">
+          <div class="placement-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQtCCmD-p0tQ3lOLUDxYtjD9QPABt1fGStr5eK63MtdK9kB9xh5sOXXFNDO9yn09CbEEM&usqp=CAU" alt="Google">
+            <p>Google Hires</p>
+          </div>
+          <div class="placement-box">
+            <img src="https://m.economictimes.com/thumb/msid-114121376,width-1200,height-900,resizemode-4,imgsize-49120/tcs-q2-results-today-here-are-5-things-to-watch-out-for.jpg" alt="TCS">
+            <p>TCS Placement</p>
+          </div>
+          <div class="placement-box">
+            <img src="https://media.fortuneindia.com/fortune-india/import/2023-09/23f49c90-166d-44e4-909c-eb673e9d1d42/infosys__8_.jpg?w=640&auto=format,compress&fit=max&q=70" alt="Infosys">
+            <p>Infosys Offers</p>
+          </div>
+          <div class="placement-box">
+            <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202404/6630d454ac084-wipro-shares-in-focus-after-multi-million-nokia-deal-302155353-16x9.jpg?size=1200:675" alt="Wipro">
+            <p>Wipro Jobs</p>
+          </div>
+          <div class="placement-box">
+            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-03/06/full/1709709656-7487.jpg?im=FitAndFill=(826,465)" alt="Accenture">
+            <p>Accenture Roles</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <style>
+        .choose-us {
+          padding: 50px 20px;
+          background-color: #fff;
+          text-align: center;
+        }
+      
+        .choose-us h2 {
+          font-size: 2.2rem;
+          font-weight: bold;
+          margin-bottom: 40px;
+        }
+      
+        .features {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+        }
+      
+        .feature-box {
+          width: 250px;
+          background-color: #f0f8ff;
+          border-radius: 12px;
+          padding: 20px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+          transition: transform 0.3s ease;
+        }
+      
+        .feature-box:hover {
+          transform: translateY(-5px);
+        }
+      
+        .feature-box img {
+          width: 150px;
+          height: 150px;
+          margin-bottom: 15px;
+        }
+      
+        .feature-box h4 {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+      
+        .feature-box p {
+          font-size: 0.95rem;
+          color: #333;
+        }
+      
+        @media (max-width: 768px) {
+          .feature-box {
+            width: 100%;
+            max-width: 320px;
+          }
+        }
+      </style>
+      
+      <div class="choose-us">
+        <h2 style="font-size: 50px;">Why Choose <span style="color: #07c4d9;">Our Institution</span></h2>
+        <div class="features">
+          <div class="feature-box">
+            <img src="https://www.momsoonacademy.com/wp-content/uploads/2025/04/Faculty.webp" alt="Expert Faculty">
+            <h4>Expert Faculty</h4>
+            <p>Highly qualified instructors with real-world experience.</p>
+          </div>
+          <div class="feature-box">
+            <img src="https://vidhyarthee.co.in/uploads/Placement%20Assistance.jpg" alt="Placement Support">
+            <h4>Placement Support</h4>
+            <p>98% placement record in top MNCs and startups.</p>
+          </div>
+          <div class="feature-box">
+            <img src="https://www.esb-business-school.de/fileadmin/_processed_/9/a/csm_esb-business-school_Jagiellonian_University_Image_1_2f9034c6a2.jpg" alt="Modern Campus">
+            <h4>Modern Campus</h4>
+            <p>Smart classrooms, labs, and world-class infrastructure.</p>
+          </div>
+          <div class="feature-box">
+            <img src="https://www.ssims.edu.in/wp-content/uploads/2020/03/ssit-students-scholarship-loans.jpg" alt="Scholarships">
+            <h4>Scholarships</h4>
+            <p>Financial support and merit-based scholarship programs.</p>
+          </div>
+          <div class="feature-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL_rE8qB4exxptx1Ua3jNfzuqAM8A8ijIefg&s" alt="Skill Development">
+            <h4>Skill Development</h4>
+            <p>Hands-on training, coding bootcamps, and soft skill workshops.</p>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .feedback-section {
+          background-color: #191818;
+          padding: 50px 20px;
+          max-width: 800px;
+          margin: auto;
+          border-radius: 12px;
+          box-shadow: 0 0 15px rgba(250, 247, 247, 0.984);
+        }
+      
+        .feedback-section h2 {
+          text-align: center;
+          margin-bottom: 30px;
+          font-size: 2rem;
+        }
+      
+        .feedback-form input,
+        .feedback-form textarea,
+        .feedback-form select {
+          width: 100%;
+          padding: 12px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          font-size: 1rem;
+        }
+      
+        .feedback-form button {
+          width: 100%;
+          padding: 12px;
+          background-color: #0d6efd;
+          border: none;
+          border-radius: 8px;
+          color: white;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      
+        .feedback-form button:hover {
+          background-color: #084fc7;
+        }
+      </style>
+      <div style="background-color: #191818; ">
+      <div class="feedback-section" style="background-color: #333; ">
+        <h2 style="color: white;">Feedback Form</h2>
+        <form class="feedback-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+      
+          <select required>
+            <option value="">Rate Us</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Good</option>
+            <option value="3">⭐⭐⭐ Average</option>
+            <option value="2">⭐⭐ Poor</option>
+            <option value="1">⭐ Very Poor</option>
+          </select>
+      
+          <textarea rows="5" placeholder="Your Message or Feedback..." required></textarea>
+      
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+    <style>
+      .lasttext{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(7,85,91);;
+  color: white;
+  font-size: 20px;
+}
+    </style>
+    <footer class="lasttext">
+      <p>Devloped with love from THE DEBUGGERS</p>
+  </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+      
+  </body>
+</html>

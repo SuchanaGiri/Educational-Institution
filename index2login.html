@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-section">
+      <h2>Login Now</h2>
+      <div class="underline"></div>
+      <form id="loginForm" onsubmit="return validateCaptcha()">
+        <label for="studentCode">USER NAME</label>
+        <input type="text" id="studentCode" required />
+
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" required />
+
+        <label for="captchaInput">Enter Security code</label>
+        <canvas id="captchaCanvas" width="200" height="50"></canvas>
+        <input type="text" id="captchaInput" required />
+
+        <p class="change" onclick="generateCaptcha()">[Change Image]</p>
+
+        <button type="submit">Login</button>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    <div class="image-section">
+      <!-- You can replace with your own image -->
+      <img src="./login.jpeg" alt="Campus Image" />
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="login.js"></script>
+</body>
+</html>

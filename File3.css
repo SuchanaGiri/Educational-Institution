@@ -1,0 +1,150 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background:black;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav .logo {
+    color: #f4c10f;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .menu h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .menu-item {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.03);
+  }
+  
+  .food-img img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .menu-item h4 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .menu-item p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  .lasttext{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7,85,91);;
+    color: white;
+    font-size: 20px;
+  }  
+
+/* Responsive for Canteen Page */
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  nav ul li {
+    margin: 8px 0;
+  }
+  .menu {
+    padding: 1rem;
+  }
+  .menu h2 {
+    font-size: 1.3rem;
+  }
+  .menu-grid {
+    gap: 1rem;
+  }
+  .menu-item {
+    padding: 0.7rem;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  nav ul li {
+    margin: 4px 0;
+  }
+  .menu {
+    padding: 0.5rem;
+  }
+  .menu h2 {
+    font-size: 1rem;
+  }
+  .menu-grid {
+    gap: 0.5rem;
+  }
+  .menu-item {
+    padding: 0.4rem;
+  }
+  .food-img img {
+    height: 80px;
+  }
+  .lasttext {
+    font-size: 0.9rem;
+    height: 60px;
+    padding: 5px;
+  }
+}  
